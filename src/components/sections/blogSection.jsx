@@ -14,7 +14,7 @@ const BlogSection = () => {
           <BsArrowRightCircle className="text-5xl ml-4 group-hover:translate-x-2 group-hover:ease-in group-hover:duration-300" />
         </a>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <BlogCard />
         <BlogCard />
         <BlogCard />
