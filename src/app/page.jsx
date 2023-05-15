@@ -1,16 +1,37 @@
-import Image from "next/image";
-import HelloWorld from "./hello.mdx";
+import React from "react";
+import HeroSection from "@/components/sections/heroSection";
+import IntroSection from "@/components/sections/introSection";
+import { Spacer } from "@/components/spacer";
+import ServicesSection from "@/components/sections/servicesSection";
+import BlogSection from "@/components/sections/blogSection";
+import SkillsSection from "@/components/sections/skillsSection";
 
-export default function Home() {
+const page = () => {
   return (
-    <main className="prose">
-      <HelloWorld />
-      <label className="swap swap-flip text-9xl">
-        <input type="checkbox" />
+    <main>
+      <HeroSection />
+      <Spacer size="xs" />
+      <IntroSection />
+      <Spacer size="lg" />
+      <ServicesSection />
+      <Spacer size="base" />
+      <BlogSection />
+      <Spacer size="lg" />
+      <SkillsSection />
+      <Spacer size="lg" />
 
-        <div className="swap-on">😈</div>
-        <div className="swap-off">😇</div>
-      </label>
+      {/* 
+        <Spacer size="base" />
+        <BlogSection
+          articles={data.blogRecommendations}
+          title="Blog recommendations"
+          description="Prepared especially for you."
+        />
+        <DiscordSection />
+        <Spacer size="lg" />
+        <AboutSection /> */}
     </main>
   );
-}
+};
+
+export default page;
