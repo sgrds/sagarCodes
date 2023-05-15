@@ -18,10 +18,10 @@ const IntroSection = () => {
             content to reel in that perfect target audience.
           </h1>
           <p className="text-2xl font-normal py-10">
-            As an anime fan, I enjoy taking creative breaks from my full stack
-            development work, by exploring graphic design and polishing video
-            editing skills. This allows me to tap into my artistic side while
-            also indulging in a beloved hobby.
+            {`I'm a big anime fan, I enjoy taking creative breaks from my full
+            stack development work, by exploring graphic design and polishing
+            video editing skills. This allows me to tap into my artistic side
+            while also indulging in a beloved hobby.`}
           </p>
           <a href="#about" className="text-white group flex mt-6 text-2xl">
             <h3 className="pt-2">Learn More About Me</h3>
