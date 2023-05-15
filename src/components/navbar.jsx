@@ -1,10 +1,13 @@
+import Link from "next/link";
 import React from "react";
 
 const navbar = () => {
   return (
     <div className="mx-auto max-w-screen-2xl flex items-center p-2 min-h-[15vh] bg-base-200">
       <div className="flex-1">
-        <a className="text-3xl text-white font-medium">SagarCodes</a>
+        <Link href="/" className="text-2xl md:text-3xl text-white font-medium">
+          SagarCodes
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
