@@ -19,17 +19,6 @@ const page = () => {
       <Spacer size="base" />
       <BlogSection />
       <Spacer size="lg" />
-
-      {/* 
-        <Spacer size="base" />
-        <BlogSection
-          articles={data.blogRecommendations}
-          title="Blog recommendations"
-          description="Prepared especially for you."
-        />
-        <DiscordSection />
-        <Spacer size="lg" />
-        <AboutSection /> */}
     </main>
   );
 };
