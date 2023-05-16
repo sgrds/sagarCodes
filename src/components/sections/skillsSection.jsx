@@ -95,12 +95,12 @@ const SkillsSection = () => {
     <div className="relative min-h-screen grid content-center gap-16 text-white text-8xl overflow-hidden">
       <ScrollComponent />
       <ScrollComponent />
-      <div className="absolute -right-20 md:-right-64 mx-auto mr-auto z-10 w-[600px] h-[600px] md:w-[1000px] md:h-[1000px] bg-base-200 opacity-90 rounded-full" />
+      {/* <div className="absolute right-0 left-0 mx-auto mr-auto z-10 w-[1000px] h-[1000px] bg-base-200  rounded-full" /> */}
       <Image
         width={800}
-        height={1000}
-        src="/anime.png"
-        className="absolute -right-20  z-20"
+        height={900}
+        src="/anime1.png"
+        className="absolute right-0 left-0 mx-auto mr-auto md:bg-base-200 rounded-full z-20"
         alt="AnimeImg of Drawing: Saikyou Mangaka Wa Oekaki Skill De Isekai Musou Suru!"
       />
     </div>
