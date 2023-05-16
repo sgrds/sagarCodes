@@ -11,13 +11,13 @@ const page = () => {
     <main>
       <HeroSection />
       <Spacer size="xs" />
+      <SkillsSection />
+      <Spacer size="xs" />
       <IntroSection />
       <Spacer size="lg" />
       <ServicesSection />
       <Spacer size="base" />
       <BlogSection />
-      <Spacer size="lg" />
-      <SkillsSection />
       <Spacer size="lg" />
 
       {/* 
