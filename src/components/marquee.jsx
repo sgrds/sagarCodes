@@ -5,7 +5,7 @@ const MarqueeComponent = ({
   gradient = "false",
   speed = 20,
   pauseOnClick = false,
-  gap = "16",
+  // gap = "16",
   children,
 }) => {
   return (
@@ -15,7 +15,11 @@ const MarqueeComponent = ({
       speed={speed}
       pauseOnClick={pauseOnClick}
     >
-      <div className={`flex gap-${gap} mr-${gap}`}>{children}</div>
+      <div
+        className={`flex gap-11 md:gap-16 lg:gap-20 mr-11 md:mr-16 lg:mr-20`}
+      >
+        {children}
+      </div>
     </Marquee>
   );
 };

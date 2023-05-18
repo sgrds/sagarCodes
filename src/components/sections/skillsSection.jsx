@@ -19,9 +19,7 @@ import {
   SiMysql,
   SiYoutube,
   SiInstagram,
-  SiNotion,
   SiAdobephotoshop,
-  SiAdobeillustrator,
   SiAdobepremierepro,
   SiAdobeaftereffects,
   SiFigma,
@@ -42,7 +40,6 @@ const ScrollComponent = () => {
       >
         <SiWix />
         <SiAdobephotoshop />
-        <SiNotion />
         <SiInstagram />
         <SiAdobepremierepro />
         <SiYoutube />
@@ -52,7 +49,6 @@ const ScrollComponent = () => {
         <SiCanva />
         <SiWix />
         <SiAdobephotoshop />
-        <SiNotion />
         <SiInstagram />
         <SiAdobepremierepro />
         <SiYoutube />
@@ -92,15 +88,16 @@ const ScrollComponent = () => {
 
 const SkillsSection = () => {
   return (
-    <div className="relative min-h-screen grid content-center gap-16 text-white text-8xl overflow-hidden">
+    <div className="bg-[url('/background2.svg')] bg-cover relative min-h-screen grid content-center gap-10 md:gap-16 text-white text-7xl">
       <ScrollComponent />
       <ScrollComponent />
-      {/* <div className="absolute right-0 left-0 mx-auto mr-auto z-10 w-[1000px] h-[1000px] bg-base-200  rounded-full" /> */}
+      <div className="hidden lg:block opacity-95 absolute top-0 bottom-0 right-0 left-0 mx-auto mr-auto my-auto z-10 w-[960px] h-[960px] bg-gradient-radial from-base-300 via-base-200 blur-lg rounded-full" />
       <Image
-        width={800}
-        height={900}
+        width={600}
+        height={600}
         src="/anime1.png"
-        className="absolute right-0 left-0 mx-auto mr-auto md:bg-base-200 rounded-full z-20"
+        loading="lazy"
+        className="w-auto h-auto absolute top-0 bottom-0 right-0 left-0 mx-auto mr-auto my-auto rounded-full z-20 hidden lg:block"
         alt="AnimeImg of Drawing: Saikyou Mangaka Wa Oekaki Skill De Isekai Musou Suru!"
       />
     </div>
