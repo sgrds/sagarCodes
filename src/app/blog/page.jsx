@@ -26,7 +26,7 @@ const page = () => {
       {/* Featured Blog Section */}
       <div className="m-4">
         <div
-          className="bg-base-100 rounded-md mx-auto max-w-screen-xl hover:ring-2 hover:ring-warning
+          className="bg-base-100 rounded-md mx-auto max-w-screen-xl hover:ring-offset-4 hover:ring-offset-base-200 hover:ring-2 hover:ring-warning
        py-11 px-8 md:px-16 lg:px-32"
         >
           <p className="text-secondary">Featured article</p>
@@ -62,19 +62,21 @@ const page = () => {
 
       {/* blog list */}
 
-      <div className="mx-auto max-w-screen-xl grid gap-6 md:grid-cols-2 lg:grid-cols-3 grid-flow-row-dense px-4">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+      <div className="mx-4">
+        <div className="mx-auto max-w-screen-xl grid gap-6 md:grid-cols-2 lg:grid-cols-3 grid-flow-row-dense">
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+        </div>
+        {/* Spacer component */}
+        <Spacer size="lg" />
       </div>
-      {/* Spacer component */}
-      <Spacer size="lg" />
     </div>
   );
 };
