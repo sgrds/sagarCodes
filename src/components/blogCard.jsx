@@ -17,8 +17,8 @@ const BlogCard = (
   }
 ) => {
   return (
-    <div className="w-full">
-      <div className="aspect-h-4 aspect-w-3 bg-red-200 rounded-lg overflow-hidden card">
+    <div className="w-full group">
+      <div className="aspect-h-4 aspect-w-3 bg-red-200 rounded-lg overflow-hidden card group-hover:ring-2  ring-offset-base-200 ring-offset-4 group-hover:ring-warning">
         <Image
           width={1600}
           height={1000}
