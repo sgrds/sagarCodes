@@ -1,3 +1,5 @@
+import BlogCard from "@/components/blogCard";
+import { Spacer } from "@/components/spacer";
 import Image from "next/image";
 import React from "react";
 import { BsArrowRightCircle } from "react-icons/bs";
@@ -54,6 +56,25 @@ const page = () => {
           </div>
         </div>
       </div>
+      {/* Spacer component */}
+
+      <Spacer size="3xs" />
+
+      {/* blog list */}
+
+      <div className="mx-auto max-w-screen-xl grid gap-6 md:grid-cols-2 lg:grid-cols-3 grid-flow-row-dense px-4">
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+      </div>
+      {/* Spacer component */}
+      <Spacer size="lg" />
     </div>
   );
 };
