@@ -33,9 +33,6 @@ async function getBlogs(slug) {
 export default async function Blogs({ params: { slug } }) {
   const { code, frontmatter } = await getBlogs(slug);
   const Component = getMDXComponent(code);
-  let countRender = 0;
-  countRender++;
-  console.log(countRender);
 
   return (
     <main className="px-4 mx-auto max-w-screen-xl pt-8 pb-16 lg:pt-16 lg:pb-24 ">
