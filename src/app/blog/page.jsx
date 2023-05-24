@@ -3,8 +3,43 @@ import { Spacer } from "@/components/spacer";
 import Image from "next/image";
 import React from "react";
 import { BsArrowRightCircle } from "react-icons/bs";
+import fs from "fs";
+import path from "path";
+import { sortByDate } from "@/utils";
+import { bundleMDX } from "mdx-bundler";
 
-const page = () => {
+async function getBlogs() {
+  // Get files from the posts dir
+  const files = fs.readdirSync(path.join("posts"));
+
+  // Get slug and frontmatter from posts
+  const posts = await Promise.all(
+    files.map(async (filename) => {
+      // Create slug
+      const slug = filename.replace(".mdx", "");
+
+      // Get frontmatter
+      const source = fs.readFileSync(path.join("posts", filename), "utf-8");
+
+      const { frontmatter } = await bundleMDX({ source: source });
+
+      return {
+        slug,
+        frontmatter,
+      };
+    })
+  );
+
+  return {
+    posts: posts.sort(sortByDate),
+  };
+}
+
+const page = async () => {
+  const data = await getBlogs();
+  // console.log(data.posts);
+  // console.log(data);
+
   return (
     <div>
       {/* Hero section */}
