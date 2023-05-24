@@ -36,9 +36,7 @@ async function getBlogs() {
 }
 
 const page = async () => {
-  const data = await getBlogs();
-  // console.log(data.posts);
-  // console.log(data);
+  const { posts } = await getBlogs();
 
   return (
     <div>
@@ -99,15 +97,9 @@ const page = async () => {
 
       <div className="mx-4">
         <div className="mx-auto max-w-screen-xl grid gap-6 md:grid-cols-2 lg:grid-cols-3 grid-flow-row-dense">
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
+          {posts.map((data, index) => (
+            <BlogCard key={index} post={data} />
+          ))}
         </div>
         {/* Spacer component */}
         <Spacer size="lg" />
