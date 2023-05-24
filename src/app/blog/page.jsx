@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       {/* Hero section */}
-      <div className="hero my-20 bg-base-200">
+      <div className="hero my-32 bg-base-200">
         <div className="hero-content text-center">
           <div className="max-w-4xl">
             <h1 className="text-5xl font-bold">
