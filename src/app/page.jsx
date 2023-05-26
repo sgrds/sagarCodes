@@ -12,12 +12,12 @@ const page = () => {
       <HeroSection />
       <Spacer size="xs" />
       <SkillsSection />
-      <Spacer size="xs" />
+      <Spacer size="base" />
       <IntroSection />
       <Spacer size="lg" />
       <ServicesSection />
       <Spacer size="base" />
-      <BlogSection />
+      {/* <BlogSection /> */}
       <Spacer size="lg" />
     </main>
   );
