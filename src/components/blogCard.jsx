@@ -3,9 +3,17 @@ import Link from "next/link";
 
 const BlogCard = ({ post }) => {
   // console.log(post);
-  const { slug, frontmatter } = post;
+  const {
+    slug = "404",
+    frontmatter = {
+      title: "404",
+      date: "404",
+      coverImage: "404.png",
+      time: "404",
+    },
+  } = post;
   const { title, date, coverImage, time } = frontmatter;
-  console.log(frontmatter);
+  // console.log(slug);
   return (
     <Link href={"/blog/" + slug} className="w-full group">
       <div className="aspect-h-4 aspect-w-3 bg-red-200 rounded-lg overflow-hidden card group-hover:ring-2  ring-offset-base-200 ring-offset-4 group-hover:ring-warning">
