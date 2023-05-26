@@ -33,11 +33,12 @@ async function getBlogs(slug) {
 export default async function Blogs({ params: { slug } }) {
   const { code, frontmatter } = await getBlogs(slug);
   const Component = getMDXComponent(code);
+  // console.log(frontmatter);
 
   return (
     <main className="px-4 mx-auto max-w-screen-xl pt-8 pb-16 lg:pt-16 lg:pb-24 ">
       <article className="mx-auto w-full max-w-3xl">
-        <BlogHeader />
+        <BlogHeader frontmatter={frontmatter} />
         <div className="prose md:prose-lg dark:prose-invert">
           <Component />
         </div>
