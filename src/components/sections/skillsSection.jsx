@@ -33,7 +33,7 @@ const ScrollComponent = () => {
   return (
     <>
       <MarqueeComponent
-        direction="right"
+        direction="left"
         gradient={false}
         speed={20}
         pauseOnClick={true}
@@ -61,7 +61,7 @@ const ScrollComponent = () => {
       <MarqueeComponent
         direction="left"
         gradient={false}
-        speed={20}
+        speed={30}
         pauseOnClick={true}
       >
         <SiHtml5 />
