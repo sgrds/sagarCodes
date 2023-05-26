@@ -17,7 +17,7 @@ const page = () => {
       <Spacer size="lg" />
       <ServicesSection />
       <Spacer size="base" />
-      {/* <BlogSection /> */}
+      <BlogSection />
       <Spacer size="lg" />
     </main>
   );
