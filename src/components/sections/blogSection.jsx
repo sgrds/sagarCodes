@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const BlogSection = async () => {
   const { posts } = await getBlogs();
-  const randomBlogs = [...randomBlogReturn(posts, 9)];
+  const randomBlogs = [...randomBlogReturn(posts, 5)];
   const arrBlogs = randomBlogs.filter((element) => {
     return element !== undefined;
   });
