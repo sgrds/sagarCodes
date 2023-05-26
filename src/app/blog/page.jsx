@@ -8,7 +8,7 @@ import path from "path";
 import { sortByDate } from "@/utils";
 import { bundleMDX } from "mdx-bundler";
 
-async function getBlogs() {
+export async function getBlogs() {
   // Get files from the posts dir
   const files = fs.readdirSync(path.join("posts"));
 
