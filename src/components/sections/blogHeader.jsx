@@ -37,7 +37,7 @@ const BlogHeader = ({ frontmatter }) => {
           alt="HeroImage"
         />
       </div>
-      <Spacer size="2xs" />
+      <Spacer size="sm" />
     </div>
   );
 };
