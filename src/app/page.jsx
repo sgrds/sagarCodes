@@ -5,6 +5,7 @@ import { Spacer } from "@/components/spacer";
 import ServicesSection from "@/components/sections/servicesSection";
 import BlogSection from "@/components/sections/blogSection";
 import SkillsSection from "@/components/sections/skillsSection";
+import FeaturedBlogs from "@/components/sections/featuredBlogs";
 
 const page = () => {
   return (
@@ -17,7 +18,7 @@ const page = () => {
       <Spacer size="lg" />
       <ServicesSection />
       <Spacer size="base" />
-      <BlogSection />
+      <FeaturedBlogs />
       <Spacer size="lg" />
     </main>
   );
