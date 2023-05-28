@@ -26,19 +26,39 @@ const Footer = () => {
               <br /> empowering bussiness.
             </p>
             <div className="grid grid-flow-col gap-5">
-              <a className="text-3xl text-white hover:text-base-content">
+              <a
+                href="https://github.com/sgrds"
+                target="_blank"
+                className="text-3xl text-white hover:text-base-content"
+              >
                 <BsGithub />
               </a>
-              <a className="text-3xl text-white hover:text-base-content">
+              <a
+                href="https://www.youtube.com/channel/UCbhAKZUKZliQrzx7chh2ZOg"
+                target="_blank"
+                className="text-3xl text-white hover:text-base-content"
+              >
                 <BsYoutube />
               </a>
-              <a className="text-3xl text-white hover:text-base-content">
+              <a
+                href="https://twitter.com/sagardasdev"
+                target="_blank"
+                className="text-3xl text-white hover:text-base-content"
+              >
                 <BsTwitter />
               </a>
-              <a className="text-3xl text-white hover:text-base-content">
+              <a
+                href="https://www.instagram.com/sagar_codes/"
+                target="_blank"
+                className="text-3xl text-white hover:text-base-content"
+              >
                 <BsInstagram />
               </a>
-              <a className="text-3xl text-white hover:text-base-content">
+              <a
+                href="https://www.linkedin.com/in/sagar-das-web-developer/"
+                target="_blank"
+                className="text-3xl text-white hover:text-base-content"
+              >
                 <BsLinkedin />
               </a>
             </div>
