@@ -7,5 +7,5 @@ export const randomBlogReturn = (arr, max = 4) => {
     const randomBlog = arr[Math.floor(Math.random() * (arr.length + 1))];
     randomBlogs.add(randomBlog);
   }
-  return randomBlogs;
+  return [...randomBlogs];
 };
