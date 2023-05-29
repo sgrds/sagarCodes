@@ -7,6 +7,7 @@ import fs from "fs";
 import path from "path";
 import { sortByDate } from "@/utils";
 import { bundleMDX } from "mdx-bundler";
+import { BiChevronLeftCircle, BiChevronRightCircle } from "react-icons/bi";
 
 export async function getBlogs() {
   // Get files from the posts dir
@@ -62,7 +63,14 @@ const page = async () => {
           className="bg-base-100 rounded-md mx-auto max-w-screen-xl hover:ring-offset-4 hover:ring-offset-base-200 hover:ring-2 hover:ring-warning
        py-11 px-8 md:px-16 lg:px-32"
         >
-          <p className="text-secondary">Featured article</p>
+          <div className="w-full grid grid-cols-2">
+            <p className="text-secondary text-lg">Featured article</p>
+            <div className="flex gap-2 text-5xl justify-self-end mx-4">
+              <BiChevronLeftCircle className="hover:text-white" />
+              <BiChevronRightCircle className="hover:text-white" />
+            </div>
+          </div>
+
           <div className="mt-14 grid md:grid-cols-6 gap-16">
             <div className="col-span-1 md:col-span-4 grid content-between">
               <div>
