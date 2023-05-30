@@ -3,9 +3,9 @@ import HeroSection from "@/components/sections/heroSection";
 import IntroSection from "@/components/sections/introSection";
 import { Spacer } from "@/components/spacer";
 import ServicesSection from "@/components/sections/servicesSection";
-import BlogSection from "@/components/sections/blogSection";
 import SkillsSection from "@/components/sections/skillsSection";
 import FeaturedBlogs from "@/components/sections/featuredBlogs";
+import DiscordSection from "@/components/sections/discordSection";
 
 const page = () => {
   return (
@@ -19,6 +19,8 @@ const page = () => {
       <ServicesSection />
       <Spacer size="base" />
       <FeaturedBlogs />
+      <Spacer size="lg" />
+      <DiscordSection />
       <Spacer size="lg" />
     </main>
   );
