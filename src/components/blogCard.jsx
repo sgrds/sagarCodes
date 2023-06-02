@@ -19,7 +19,7 @@ const BlogCard = ({ post }) => {
         <p className="my-6 text-xl font-medium">
           {frontmatter?.date} — {frontmatter?.time} min read
         </p>
-        <h3 className="text-3xl text-white font-medium">
+        <h3 className="text-3xl text-white font-medium line-clamp-2">
           {frontmatter?.title}
         </h3>
       </div>
