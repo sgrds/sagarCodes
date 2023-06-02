@@ -5,7 +5,6 @@ import { Spacer } from "../spacer";
 import Image from "next/image";
 
 const BlogHeader = ({ frontmatter }) => {
-  // console.log(frontmatter);
   const {
     title = "404",
     date = "404",
@@ -37,7 +36,6 @@ const BlogHeader = ({ frontmatter }) => {
           alt="HeroImage"
         />
       </div>
-      <Spacer size="sm" />
     </div>
   );
 };
