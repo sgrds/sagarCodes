@@ -40,10 +40,11 @@ export default async function Blogs({ params: { slug } }) {
     <main className="px-4 mx-auto max-w-screen-xl pt-8 pb-16 lg:pt-16 lg:pb-24 ">
       <article>
         <BlogHeader frontmatter={frontmatter} />
+        <Spacer size="xs" />
         <div className="prose md:prose-lg dark:prose-invert mx-auto w-full max-w-3xl">
           <Component />
         </div>
-        <Spacer size="sm" />
+        <Spacer size="xs" />
         <div className="mx-auto max-w-3xl border-b-2 pb-4 border-neutral justify-end flex gap-4">
           <a
             target="_blank"
