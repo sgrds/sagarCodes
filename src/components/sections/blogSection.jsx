@@ -1,9 +1,7 @@
 import React from "react";
 import BlogCard from "../blogCard";
-import { BsArrowRightCircle } from "react-icons/bs";
 import { getBlogs } from "@/app/blog/page";
 import { randomBlogReturn } from "@/utils";
-import Link from "next/link";
 
 const BlogSection = async () => {
   const { posts } = await getBlogs();
