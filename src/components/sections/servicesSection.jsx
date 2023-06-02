@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { BsArrowRightCircle } from "react-icons/bs";
+import Link from "next/link";
 
 const ServicesSection = () => {
   return (
@@ -18,13 +19,17 @@ const ServicesSection = () => {
           </h2>
           <div className="divider md:col-span-2"></div>
           <div className="flex md:grid  content-end text-xl md:text-7xl gap-8 md:gap-10 font-medium">
-            <a className="hover:text-white" href="#">
+            <Link className="hover:text-white" href="/blog">
               blog
-            </a>
-            <a className="hover:text-white" href="#">
+            </Link>
+            <Link href="/service" className="hover:text-white">
               services
-            </a>
-            <a className="hover:text-white" href="#">
+            </Link>
+            <a
+              href="https://www.youtube.com/channel/UC6fVngPhZP6PD6uIwgSMvBQ"
+              target="_blank"
+              className="hover:text-white"
+            >
               youtube
             </a>
           </div>
@@ -43,10 +48,10 @@ const ServicesSection = () => {
               education, and content creation. My aim is to share insights that
               are both informative and entertaining to help you. Let's dive in!`}
             </p>
-            <a href="#about" className="text-white group flex mt-6 text-2xl">
+            <Link href="/blog" className="text-white group flex mt-6 text-2xl">
               <h3 className="pt-2">Go to Blogs</h3>
               <BsArrowRightCircle className="text-5xl ml-4 group-hover:translate-x-2 group-hover:ease-in group-hover:duration-300" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
