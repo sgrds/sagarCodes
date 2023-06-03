@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  // images: {
+  //   domain: [],
+  // },
 };
 
 const withMDX = require("@next/mdx")();
