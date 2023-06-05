@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BsArrowDownCircle } from "react-icons/bs";
 const HeroSection = () => {
   return (
-    <div className="hero min-h-[85vh] bg-base-200">
+    <div className="hero min-h-[85vh]">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <Image
           width={1500}

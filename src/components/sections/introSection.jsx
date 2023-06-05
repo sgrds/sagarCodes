@@ -3,7 +3,7 @@ import { BsArrowRightCircle } from "react-icons/bs";
 
 const IntroSection = () => {
   return (
-    <div id="Intro" className="hero bg-base-200">
+    <div id="Intro" className="hero">
       <div className="hero-content relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto">
         <Image
           width={600}

@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="mx-auto max-w-screen-2xl flex justify-between items-center p-2 min-h-[15vh] bg-base-200">
+    <div className="mx-auto max-w-screen-2xl flex justify-between items-center p-2 min-h-[15vh]">
       <div className="flex-1">
         <Link href="/" className="text-2xl md:text-3xl text-white font-medium">
           SagarCodes

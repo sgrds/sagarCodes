@@ -6,7 +6,7 @@ import Link from "next/link";
 const ServicesSection = () => {
   return (
     <div className="mx-4">
-      <div className="mx-auto max-w-screen-2xl bg-base-300 rounded-box">
+      <div className="mx-auto max-w-screen-2xl bg-neutral rounded-box">
         <div className="grid mx-auto max-w-screen-xl md:grid-cols-2 gap-8 md:gap-16 text-3xl md:text-4xl px-6 py-16 md:px-11 md:py-32">
           <h1 className="text-white leading-snug">
             Struggling with `web Presence`, Content, web Product/App? We can

@@ -16,7 +16,7 @@ const Footer = () => {
       {/* <Spacer size="xs" /> */}
 
       <footer className="grid mx-auto min-h-screen items-center max-w-screen-xl px-4">
-        <div className="text-xl footer p-10 bg-base-200 text-base-content">
+        <div className="text-xl footer p-10 text-base-content">
           <div>
             <Link href="/" className="text-4xl text-white mb-2">
               SagarCodes

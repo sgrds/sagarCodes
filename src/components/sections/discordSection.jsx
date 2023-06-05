@@ -3,7 +3,7 @@ import { SiDiscord } from "react-icons/si";
 
 const DiscordSection = () => {
   return (
-    <div className="hero bg-base-200">
+    <div className="hero">
       <div className="grid items-center gap-8 grid-cols-2 max-w-screen-xl">
         <div>
           <div className="flex text-5xl font-bold text-white">
