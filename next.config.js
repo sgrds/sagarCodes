@@ -3,9 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  // images: {
-  //   domain: [],
-  // },
+  images: {
+    domains: ["qpzsjmjzjfmluroetwtm.supabase.co"],
+  },
 };
 
 const withMDX = require("@next/mdx")();
