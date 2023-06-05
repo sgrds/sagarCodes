@@ -1,44 +1,30 @@
 export const featuredBlogs = [
   {
-    slug: "new-in-php-8",
+    slug: "hidden-truth-behind-your-data-Exposed-by-Signal",
     frontmatter: {
-      title: "What's New In PHP 8?",
-      date: "March 7, 2021",
-      excerpt:
-        "In this article we will look at some of the new features offered in version 8 of PHP",
-      coverImage: "/wallpaper.jpg",
-      time: 10,
+      title: "The Hidden Truth Behind Your Data: Exposed by Signal",
+      date: "June 4, 2023",
+      coverImage:
+        "https://qpzsjmjzjfmluroetwtm.supabase.co/storage/v1/object/public/sagarcodes/blog/coverimage/signal.png?t=2023-06-03T18%3A48%3A27.444Z",
+      time: 3,
     },
   },
   {
-    slug: "python-book-review",
+    slug: "The-Secret-to-Loom-Success",
     frontmatter: {
-      title: "Python Book Review",
-      date: "March 7, 2021",
-      excerpt:
-        "In this review, we will be looking at the new Python book from Oriley",
-      coverImage: "/wallpaper.jpg",
-      time: 10,
+      title:
+        "The Secret to Loom's Success | How to Stand Out Among Competitors",
+      date: "June 3, 2023",
+      coverImage:
+        "https://qpzsjmjzjfmluroetwtm.supabase.co/storage/v1/object/public/sagarcodes/blog/coverimage/loomcoverimage.png?t=2023-06-03T19%3A02%3A58.405Z",
+      time: 5,
     },
   },
   {
-    slug: "django-crash-course",
+    slug: "hello",
     frontmatter: {
-      title: "Django Crash Course",
-      date: "March 5, 2021",
-      description:
-        "Django is a very powerful, high level Python framework for building web applications",
-      coverImage: "/wallpaper.jpg",
-      time: 10,
-    },
-  },
-  {
-    slug: "javascript-performance-tips",
-    frontmatter: {
-      title: "JavaScript Performance Tips",
-      date: "March 4, 2021",
-      excerpt:
-        "We will look at 10 simple tips and tricks to increase the speed of your code when writing JS",
+      title: "Hello, Next.js!",
+      date: "March 5, 2023",
       coverImage: "/wallpaper.jpg",
       time: 10,
     },
