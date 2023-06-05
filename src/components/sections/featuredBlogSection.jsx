@@ -1,10 +1,24 @@
+"use client";
 import Image from "next/image";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { featuredBlogs } from "@/constants";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const FeaturedBlogSection = () => {
-  const blog = featuredBlogs[0];
+  const randomNo = Math.floor(Math.random() * featuredBlogs.length);
+  const [blog, setBlog] = useState(featuredBlogs[0]);
+
+  useEffect(() => {
+    setBlog(featuredBlogs[randomNo]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  const { frontmatter, slug } = blog;
+  const {
+    title = "Untitled Blog",
+    date = "Month ??, 20??",
+    coverImage = "/404.png",
+  } = frontmatter;
 
   return (
     <div className="m-4">
@@ -14,11 +28,11 @@ const FeaturedBlogSection = () => {
         <div className="mt-14 grid md:grid-cols-6 gap-16">
           <div className="col-span-1 md:col-span-4 grid content-between">
             <div>
-              <h1 className="text-5xl mb-6">{blog?.frontmatter?.title}</h1>
-              <p className="text-2xl">{blog?.frontmatter?.date}</p>
+              <h1 className="text-5xl mb-6">{title}</h1>
+              <p className="text-2xl">{date}</p>
             </div>
             <Link
-              href={`/blog/${blog?.slug}`}
+              href={`/blog/${slug}`}
               target="_blank"
               className="text-white group flex text-2xl h-fit mt-8 md:mt-0"
             >
@@ -30,7 +44,7 @@ const FeaturedBlogSection = () => {
             <Image
               width={600}
               height={600}
-              src={blog?.frontmatter?.coverImage}
+              src={coverImage}
               className="rounded-lg object-cover h-full"
               alt="HeroImage"
             />
