@@ -83,7 +83,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <Spacer size="sm" />
+      <Spacer size="lg" />
     </>
   );
 };
