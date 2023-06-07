@@ -6,7 +6,7 @@ const BlogCard = ({ post }) => {
 
   return (
     <Link href={"/blog/" + post?.slug} className="w-full group">
-      <div className="aspect-h-4 aspect-w-3 bg-red-200 rounded-lg overflow-hidden card group-hover:ring-2  ring-offset-base-200 ring-offset-4 group-hover:ring-warning">
+      <div className="aspect-h-4 aspect-w-3 bg-red-200 rounded-lg overflow-hidden card group-hover:ring-2  ring-offset-base-100 ring-offset-4 group-hover:ring-warning">
         <Image
           width={1600}
           height={1000}

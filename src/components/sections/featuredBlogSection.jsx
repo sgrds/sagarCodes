@@ -22,7 +22,7 @@ const FeaturedBlogSection = () => {
 
   return (
     <div className="m-4">
-      <div className="bg-neutral rounded-md mx-auto max-w-screen-xl hover:ring-offset-4 hover:ring-offset-base-200 hover:ring-2 hover:ring-warning py-16 px-8 md:px-16 lg:px-32">
+      <div className="bg-neutral rounded-md mx-auto max-w-screen-xl hover:ring-offset-4 hover:ring-offset-base-100 hover:ring-2 hover:ring-warning py-16 px-8 md:px-16 lg:px-32">
         <p className="text-secondary text-lg">Featured article</p>
 
         <div className="mt-14 grid md:grid-cols-6 gap-16">
