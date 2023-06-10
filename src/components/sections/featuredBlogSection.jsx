@@ -3,13 +3,13 @@ import Image from "next/image";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { featuredBlogs } from "@/constants";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 
 const FeaturedBlogSection = () => {
   const randomNo = Math.floor(Math.random() * featuredBlogs.length);
   const [blog, setBlog] = useState(featuredBlogs[0]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setBlog(featuredBlogs[randomNo]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
