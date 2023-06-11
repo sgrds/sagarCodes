@@ -4,9 +4,9 @@ import { SiDiscord } from "react-icons/si";
 const DiscordSection = () => {
   return (
     <div className="hero">
-      <div className="grid items-center gap-8 grid-cols-2 max-w-screen-xl">
+      <div className="p-2 text-center md:text-left justify-center grid items-center gap-8 lg:grid-cols-2 max-w-screen-xl">
         <div>
-          <div className="flex text-5xl font-bold text-white">
+          <div className="justify-center md:justify-normal flex text-5xl font-bold text-white">
             <SiDiscord className="mr-2" />
             Discord
           </div>
