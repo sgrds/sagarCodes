@@ -4,7 +4,13 @@ import React from "react";
 import { GiPencilRuler, GiShare } from "react-icons/gi";
 import { MdGroups2 } from "react-icons/md";
 import { VscGraph } from "react-icons/vsc";
-import { SiFigma } from "react-icons/si";
+import {
+  SiFigma,
+  // SiCanva,
+  // SiAdobephotoshop,
+  // SiAdobepremierepro,
+  // SiAdobeaftereffects,
+} from "react-icons/si";
 import { FiPenTool } from "react-icons/fi";
 
 const Services = () => {
@@ -129,6 +135,13 @@ const Services = () => {
           <h3 className="mb-10 tracking-[0.2em] text-xs font-black uppercase">
             Designing innovation, crafting perfection.
           </h3>
+          {/* <div className="text-4xl flex gap-8 justify-center mb-10">
+            <SiAdobephotoshop />
+            <SiCanva />
+            <SiFigma />
+            <SiAdobepremierepro />
+            <SiAdobeaftereffects />
+          </div> */}
           <div className="grid justify-items-center">
             <div className="w-0.5 h-32 bg-gradient-to-t from-error" />
             <div
@@ -158,6 +171,17 @@ const Services = () => {
           <div className="grid gap-16">
             <div className="grid justify-items-center lg:justify-items-start">
               <div className="p-2 w-fit bg-base-content rounded-lg">
+                <FiPenTool className="text-4xl text-base-100" />
+              </div>
+              <h4 className="mt-4 text-2xl text-error font-medium">
+                Elevate Your Brand with Professional Logos
+              </h4>
+              <p className="mt-2 text-lg text-base-content">
+                {`Make a lasting impression with our professional logos that reflect your brand's personality and values.`}
+              </p>
+            </div>
+            <div className="grid justify-items-center lg:justify-items-start">
+              <div className="p-2 w-fit bg-base-content rounded-lg">
                 <SiFigma className="text-4xl text-base-100" />
               </div>
               <h4 className="mt-4 text-2xl text-error font-medium">
@@ -173,26 +197,13 @@ const Services = () => {
                 <GiShare className="text-4xl text-base-100" />
               </div>
               <h4 className="mt-4 text-2xl text-error font-medium">
-                Expert Storytellers
+                Amplify Your Social Presence with Compelling Content
               </h4>
               <p className="mt-2 text-lg text-base-content">
-                {`Crafting a compelling brand narrative requires expertise and
-                skill. That's why we hire only the best writers, and designers
-                to work on your project.`}
+                {`Crafting bespoke content that resonates with your audience to amplify your social presence. Let's connect!`}
               </p>
             </div>
-            <div className="grid justify-items-center lg:justify-items-start">
-              <div className="p-2 w-fit bg-base-content rounded-lg">
-                <FiPenTool className="text-4xl text-base-100" />
-              </div>
-              <h4 className="mt-4 text-2xl text-error font-medium">
-                {`Unlock Your Business's Potential`}
-              </h4>
-              <p className="mt-2 text-lg text-base-content">
-                {`Telling your brand story can be stressful, especially if you're
-                not sure where to start. Let us take care of everything for you.`}
-              </p>
-            </div>{" "}
+            {/* 
             <div className="grid justify-items-center lg:justify-items-start">
               <div className="p-2 w-fit bg-base-content rounded-lg">
                 <GiShare className="text-4xl text-base-100" />
@@ -205,19 +216,7 @@ const Services = () => {
                 skill. That's why we hire only the best writers, and designers
                 to work on your project.`}
               </p>
-            </div>
-            <div className="grid justify-items-center lg:justify-items-start">
-              <div className="p-2 w-fit bg-base-content rounded-lg">
-                <FiPenTool className="text-4xl text-base-100" />
-              </div>
-              <h4 className="mt-4 text-2xl text-error font-medium">
-                {`Unlock Your Business's Potential`}
-              </h4>
-              <p className="mt-2 text-lg text-base-content">
-                {`Telling your brand story can be stressful, especially if you're
-                not sure where to start. Let us take care of everything for you.`}
-              </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
