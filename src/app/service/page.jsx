@@ -12,6 +12,7 @@ import {
   // SiAdobeaftereffects,
 } from "react-icons/si";
 import { FiPenTool } from "react-icons/fi";
+import DesktopContainer from "@/components/desktopContainer";
 
 const Services = () => {
   const gradient = {
@@ -47,10 +48,10 @@ const Services = () => {
             transform your interactive product into <em>something amazing</em>.
             Get ready to make waves with us!
           </p>
-          <div class="max-w-7xl mx-auto mt-16">
-            <button class="relative group">
-              <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-              <div class="relative px-7 py-4 bg-base-100 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 ring-1 ring-gray-900/5 leading-none flex items-top justify-start space-x-6 text-xl">
+          <div className="max-w-7xl mx-auto mt-16">
+            <button className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative px-7 py-4 bg-base-100 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 ring-1 ring-gray-900/5 leading-none flex items-top justify-start space-x-6 text-xl">
                 Get in Touch
               </div>
             </button>
@@ -167,7 +168,10 @@ const Services = () => {
         </div>
 
         <div className="grid text-center lg:text-left lg:grid-cols-2 gap-8 mt-24">
-          <div></div>
+          <div>
+            <DesktopContainer />
+          </div>
+
           <div className="grid gap-16">
             <div className="grid justify-items-center lg:justify-items-start">
               <div className="p-2 w-fit bg-base-content rounded-lg">
