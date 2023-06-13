@@ -25,7 +25,7 @@ const Services = () => {
       <section className="mx-auto min-h-[85vh] grid items-center max-w-screen-xl px-2 text-center">
         {/* <Spacer size="sm" /> */}
         <div>
-          <h1 className="font-extrabold text-7xl md:text-8xl">
+          <h3 className="font-extrabold text-2xl md:text-4xl">
             <span
               className={`inline-block text-transparent bg-clip-text bg-gradient-to-l ${gradient.primary}`}
             >
@@ -42,13 +42,22 @@ const Services = () => {
             >
               Together
             </span>
+          </h3>
+          <h1 className="font-extrabold text-5xl md:text-7xl lg:text-8xl text-secondary-focus">
+            Content. Designing
           </h1>
-          <p className="mt-6 text-xl max-w-4xl mx-auto text-gray-400">
+          <div className="divider divider-verticle text-2xl md:text-4xl pt-2 text-gray-600 font-black">
+            &
+          </div>
+          <h1 className="font-extrabold text-5xl md:text-7xl lg:text-8xl text-secondary-focus">
+            Developement
+          </h1>
+          {/* <p className="mt-6 text-sm md:text-xl max-w-4xl mx-auto text-gray-400">
             Our winning strategy combines creative and engineering expertise to
             transform your interactive product into <em>something amazing</em>.
             Get ready to make waves with us!
-          </p>
-          <div className="max-w-7xl mx-auto mt-16">
+          </p> */}
+          <div className="max-w-7xl mx-auto mt-32">
             <button className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative px-7 py-4 bg-base-100 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 ring-1 ring-gray-900/5 leading-none flex items-top justify-start space-x-6 text-xl">
