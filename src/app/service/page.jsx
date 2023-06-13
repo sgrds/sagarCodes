@@ -94,7 +94,7 @@ const Services = () => {
               <h4 className="mt-4 text-2xl text-primary font-medium">
                 Every Word Counts
               </h4>
-              <p className="mt-2 text-lg text-base-content">
+              <p className="mt-2 text-lg text-base-content max-w-lg">
                 {` In today's fast-paced and noisy world, it can be challenging to
                 get your message heard. That's why we believe that every word
                 counts.`}
@@ -107,7 +107,7 @@ const Services = () => {
               <h4 className="mt-4 text-2xl text-primary font-medium">
                 Expert Storytellers
               </h4>
-              <p className="mt-2 text-lg text-base-content">
+              <p className="mt-2 text-lg text-base-content max-w-lg">
                 {`Crafting a compelling brand narrative requires expertise and
                 skill. That's why we hire only the best writers, and designers
                 to work on your project.`}
@@ -120,7 +120,7 @@ const Services = () => {
               <h4 className="mt-4 text-2xl text-primary font-medium">
                 {`Unlock Your Business's Potential`}
               </h4>
-              <p className="mt-2 text-lg text-base-content">
+              <p className="mt-2 text-lg text-base-content max-w-lg">
                 {`Telling your brand story can be stressful, especially if you're
                 not sure where to start. Let us take care of everything for you.`}
               </p>
@@ -169,7 +169,9 @@ const Services = () => {
 
         <div className="grid text-center lg:text-left lg:grid-cols-2 gap-8 mt-24">
           <div>
-            <DesktopContainer />
+            <DesktopContainer>
+              <img src="/wallpaper.jpg" alt="demo image" />
+            </DesktopContainer>
           </div>
 
           <div className="grid gap-16">
@@ -180,7 +182,7 @@ const Services = () => {
               <h4 className="mt-4 text-2xl text-error font-medium">
                 Elevate Your Brand with Professional Logos
               </h4>
-              <p className="mt-2 text-lg text-base-content">
+              <p className="mt-2 text-lg text-base-content max-w-lg">
                 {`Make a lasting impression with our professional logos that reflect your brand's personality and values.`}
               </p>
             </div>
@@ -191,7 +193,7 @@ const Services = () => {
               <h4 className="mt-4 text-2xl text-error font-medium">
                 Seamless Digital Experiences
               </h4>
-              <p className="mt-2 text-lg text-base-content">
+              <p className="mt-2 text-lg text-base-content max-w-lg">
                 UI/UX is crucial for product success. We Design with user in
                 mind, prioritize ease of use and accessibility.
               </p>
@@ -203,7 +205,7 @@ const Services = () => {
               <h4 className="mt-4 text-2xl text-error font-medium">
                 Amplify Your Social Presence with Compelling Content
               </h4>
-              <p className="mt-2 text-lg text-base-content">
+              <p className="mt-2 text-lg text-base-content max-w-lg">
                 {`Crafting bespoke content that resonates with your audience to amplify your social presence. Let's connect!`}
               </p>
             </div>
@@ -215,7 +217,7 @@ const Services = () => {
               <h4 className="mt-4 text-2xl text-error font-medium">
                 Expert Storytellers
               </h4>
-              <p className="mt-2 text-lg text-base-content">
+              <p className="mt-2 text-lg text-base-content max-w-lg">
                 {`Crafting a compelling brand narrative requires expertise and
                 skill. That's why we hire only the best writers, and designers
                 to work on your project.`}
