@@ -7,7 +7,7 @@ const DesktopContainer = ({
   children,
 }) => {
   return (
-    <div className="w-full border-white border rounded-md overflow-hidden">
+    <div className="min-w-lg bg-base-100 w-full border-white border rounded-md overflow-hidden">
       <div className="w-full border-white border-b flex">
         <div className="col-span-2 flex gap-1.5 items-center justify-center p-3">
           <div className="rounded-full bg-[#FF605C] w-3 h-3" />
