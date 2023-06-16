@@ -1,6 +1,6 @@
 import React from "react";
 
-const IntroHeader = ({ meta, children, icons }) => {
+const IntroHeader = ({ meta, children }) => {
   const {
     intro = "Intro not found",
     number = 1,
@@ -13,7 +13,7 @@ const IntroHeader = ({ meta, children, icons }) => {
       <h3 className="mb-10 tracking-[0.2em] text-xs font-black uppercase">
         {intro}
       </h3>
-      {icons && icons}
+      {children}
       <div className="grid justify-items-center">
         <div className={`w-0.5 h-32 bg-gradient-to-t ${gradient.from}`} />
         <div
