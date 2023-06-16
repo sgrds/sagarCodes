@@ -66,11 +66,7 @@ const Services = () => {
           <h1 className="font-extrabold text-5xl md:text-7xl lg:text-8xl text-secondary-focus">
             Developement
           </h1>
-          {/* <p className="mt-6 text-sm md:text-xl max-w-4xl mx-auto text-gray-400">
-            Our winning strategy combines creative and engineering expertise to
-            transform your interactive product into <em>something amazing</em>.
-            Get ready to make waves with us!
-          </p> */}
+
           <div className="max-w-7xl mx-auto mt-20">
             <button className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
@@ -346,19 +342,9 @@ const Services = () => {
           </div>
         </IntroHeader>
 
-        {/* <p className="text-center mt-8 mx-auto max-w-3xl font-medium text-xl text-gray-400">
-          We excel at crafting custom website & WebApps that meet your unique
-          business needs. We use{" "}
-          <span className="text-secondary">industry best practices</span> to
-          create responsive, user-friendly sites and apps that add value to your
-          organization.
-        </p> */}
         <div className="grid text-center lg:text-left lg:grid-cols-2 gap-8 mt-24">
           <div className="grid gap-16">
             <div className="grid justify-items-center lg:justify-items-start">
-              {/* <div className="p-2 w-fit bg-base-content rounded-lg">
-                <FiPenTool className="text-4xl text-base-100" />
-              </div> */}
               <h4 className="mt-4 text-2xl text-secondary font-bold">
                 For Seamless and Scalable Websites 💪
               </h4>
@@ -373,11 +359,6 @@ const Services = () => {
                 to create responsive, user-friendly sites and apps that add
                 value to your organization.
               </p>
-              {/* <p className="mt-2 text-lg text-base-content max-w-lg">
-                We specialize in complex Web Apps, e-commerce website with a
-                focus on optimal performance, SEO and seamless design.
-                Custom-built websites to exceed user expectations.
-              </p> */}
             </div>
             <div className="grid justify-items-center lg:justify-items-start">
               <div className="p-2 w-fit bg-base-content rounded-lg">
