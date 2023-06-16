@@ -1,5 +1,4 @@
 import { Spacer } from "@/components/spacer";
-// import Image from "next/image";
 import React from "react";
 import { GiPencilRuler, GiShare } from "react-icons/gi";
 import { MdGroups2 } from "react-icons/md";
@@ -26,6 +25,7 @@ import Marquee from "react-fast-marquee";
 import Link from "next/link";
 import Image from "next/image";
 import IntroHeader from "@/components/introHeader";
+import { BookCall } from "@/app/contact/page";
 
 const Services = () => {
   const gradient = {
@@ -399,6 +399,29 @@ const Services = () => {
           </div>
         </div>
       </section>
+      <Spacer size="lg" />
+      <section className="bg-base-100">
+        <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+          <img
+            className="w-full"
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+            alt="dashboard image"
+          />
+          <div className="mt-4 md:mt-0">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white">
+              {`Share Your Ideas with Us - Let's Bring Them to Life `}
+            </h2>
+            <p className="mb-6 md:text-lg text-base-content">
+              {`Transform your online presence today. From captivating content and
+              stunning designs to seamless website development, we'll help you
+              achieve your online goals.`}
+            </p>
+          </div>
+        </div>
+      </section>
+      <Spacer size="lg" />
+
+      <BookCall />
       <Spacer size="lg" />
     </main>
   );
