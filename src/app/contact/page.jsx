@@ -4,6 +4,44 @@ import { Spacer } from "@/components/spacer";
 import Image from "next/image";
 import Link from "next/link";
 
+export const BookCall = () => {
+  return (
+    <section className="px-4 mx-auto max-w-screen-xl ">
+      <div>
+        <div className="bg-neutral rounded-md hover:ring-offset-4 hover:ring-offset-base-100 hover:ring-2 hover:ring-warning py-16 px-8 md:px-16 lg:px-32">
+          <p className="text-secondary text-lg">Book a Call</p>
+
+          <div className="mt-14 grid md:grid-cols-6 gap-16">
+            <div className="col-span-1 md:col-span-4 grid content-between">
+              <div>
+                <h1 className="text-5xl mb-6">
+                  {`Unlock Your Business's Full Potential`}
+                </h1>
+              </div>
+              <Link
+                href="#"
+                target="_blank"
+                className="mt-4 btn btn-outline btn-success btn-lg rounded-full"
+              >
+                {` Let's vibe on a call!`}
+              </Link>
+            </div>
+            <div className="col-span-2 aspect-h-4 aspect-w-3 bg-red-200 rounded-lg overflow-hidden card">
+              <Image
+                width={600}
+                height={600}
+                src="/wallpaper.jpg"
+                className="rounded-lg object-cover h-full"
+                alt="HeroImage"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Contact = () => {
   return (
     <>
@@ -49,40 +87,7 @@ const Contact = () => {
       <DiscordSection />
       <Spacer size="lg" />
 
-      <section className="px-4 mx-auto max-w-screen-xl ">
-        <div>
-          <div className="bg-neutral rounded-md hover:ring-offset-4 hover:ring-offset-base-100 hover:ring-2 hover:ring-warning py-16 px-8 md:px-16 lg:px-32">
-            <p className="text-secondary text-lg">Book a Call</p>
-
-            <div className="mt-14 grid md:grid-cols-6 gap-16">
-              <div className="col-span-1 md:col-span-4 grid content-between">
-                <div>
-                  <h1 className="text-5xl mb-6">
-                    {`Unlock Your Business's Full Potential`}
-                  </h1>
-                </div>
-                <Link
-                  href="#"
-                  target="_blank"
-                  className="mt-4 btn btn-outline btn-success btn-lg rounded-full"
-                >
-                  {` Let's vibe on a call!`}
-                </Link>
-              </div>
-              <div className="col-span-2 aspect-h-4 aspect-w-3 bg-red-200 rounded-lg overflow-hidden card">
-                <Image
-                  width={600}
-                  height={600}
-                  src="/wallpaper.jpg"
-                  className="rounded-lg object-cover h-full"
-                  alt="HeroImage"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <BookCall />
       <Spacer size="lg" />
     </>
   );
