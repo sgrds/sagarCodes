@@ -1,10 +1,11 @@
 import React from "react";
 import BlogCard from "../blogCard";
-import { getBlogs } from "@/app/blog/page";
 import { randomBlogReturn } from "@/utils";
+import { getAllFileNameAndFrontmatter } from "@/utils/file";
 
 const BlogSection = async () => {
-  const { posts } = await getBlogs();
+  const { posts } = await getAllFileNameAndFrontmatter("posts", "mdx");
+
   const randomBlogs = randomBlogReturn(posts, 9);
   const arrBlogs = randomBlogs.filter((element) => {
     return element !== undefined;

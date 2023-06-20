@@ -1,41 +1,10 @@
 import BlogCard from "@/components/blogCard";
 import { Spacer } from "@/components/spacer";
-import React from "react";
-import fs from "fs";
-import path from "path";
-import { sortByDate } from "@/utils";
-import { bundleMDX } from "mdx-bundler";
 import FeaturedBlogSection from "@/components/sections/featuredBlogSection";
-
-export async function getBlogs() {
-  // Get files from the posts dir
-  const files = fs.readdirSync(path.join("posts"));
-
-  // Get slug and frontmatter from posts
-  const posts = await Promise.all(
-    files.map(async (filename) => {
-      // Create slug
-      const slug = filename.replace(".mdx", "");
-
-      // Get frontmatter
-      const source = fs.readFileSync(path.join("posts", filename), "utf-8");
-
-      const { frontmatter } = await bundleMDX({ source: source });
-
-      return {
-        slug,
-        frontmatter,
-      };
-    })
-  );
-
-  return {
-    posts: posts.sort(sortByDate),
-  };
-}
+import { getAllFileNameAndFrontmatter } from "@/utils/file";
 
 const page = async () => {
-  const { posts } = await getBlogs();
+  const { posts } = await getAllFileNameAndFrontmatter("posts", "mdx");
 
   return (
     <div>

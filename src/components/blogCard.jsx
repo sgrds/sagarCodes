@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const BlogCard = ({ post }) => {
+const BlogCard = ({ post, link = "blog" }) => {
   const frontmatter = post?.frontmatter;
 
   return (
-    <Link href={"/blog/" + post?.slug} className="w-full group">
+    <Link href={`/${link}/` + post?.slug} className="w-full group">
       <div className="aspect-h-4 aspect-w-3 bg-red-200 rounded-lg overflow-hidden card group-hover:ring-2  ring-offset-base-100 ring-offset-4 group-hover:ring-warning">
         <Image
           width={1600}
