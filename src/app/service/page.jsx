@@ -138,7 +138,7 @@ const Services = () => {
         </Marquee>
       </section>
       <Spacer size="lg" />
-      <section className="grid max-w-screen-xl mx-auto px-2">
+      <section id="Content" className="grid max-w-screen-xl mx-auto px-2">
         <IntroHeader
           meta={{
             intro: "Unlock the secrets of execution",
@@ -250,7 +250,7 @@ const Services = () => {
         </div>
       </section>
       <Spacer size="sm" />
-      <section className="grid max-w-screen-xl mx-auto px-2">
+      <section id="Design" className="grid max-w-screen-xl mx-auto px-2">
         <IntroHeader
           meta={{
             intro: "Designing innovation, crafting perfection.",
@@ -317,7 +317,7 @@ const Services = () => {
         </div>
       </section>
       <Spacer size="lg" />
-      <section className="grid max-w-screen-xl mx-auto px-2">
+      <section id="Developement" className="grid max-w-screen-xl mx-auto px-2">
         <IntroHeader
           meta={{
             number: 3,
@@ -421,9 +421,9 @@ const Services = () => {
       </section>
       <Spacer size="2xs" />
 
-      <div class="container_mouse">
-        <span class="mouse-btn">
-          <span class="mouse-scroll"></span>
+      <div className="container_mouse">
+        <span className="mouse-btn">
+          <span className="mouse-scroll"></span>
         </span>
       </div>
       <Spacer size="xs" />

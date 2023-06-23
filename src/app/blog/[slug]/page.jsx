@@ -46,7 +46,7 @@ export default async function Blogs({ params: { slug } }) {
 
 export async function generateStaticParams() {
   const blogs = getAllFileName("posts");
-  console.log(blogs);
+  // console.log(blogs);
 
   return blogs;
 }

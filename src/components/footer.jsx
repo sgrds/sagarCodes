@@ -68,13 +68,13 @@ const Footer = () => {
             <Link href="/service#Content" className="link link-hover">
               Content
             </Link>
-            <Link href="/Design" className="link link-hover">
+            <Link href="/service#Design" className="link link-hover">
               Design
             </Link>
-            <Link href="/Developement" className="link link-hover">
+            <Link href="/service#Developement" className="link link-hover">
               Developement
             </Link>
-            <Link href="/Clients" className="link link-hover">
+            <Link href="/clients" className="link link-hover">
               Clients
             </Link>
           </div>
