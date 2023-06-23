@@ -4,7 +4,7 @@ import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { Spacer } from "../spacer";
 import Image from "next/image";
 
-const BlogHeader = ({ frontmatter }) => {
+const BlogHeader = ({ frontmatter, link = "/blog" }) => {
   const {
     title = "404",
     date = "404",
@@ -15,7 +15,7 @@ const BlogHeader = ({ frontmatter }) => {
   return (
     <div>
       <div className="mx-auto w-full max-w-3xl">
-        <Link href="/blog" className="group flex text-lg">
+        <Link href={link} className="group flex text-lg">
           <MdOutlineKeyboardBackspace className="text-3xl mr-2 group-hover:-translate-x-2 group-hover:ease-in group-hover:duration-300" />
           <span className="pt">Back to Blogs</span>
         </Link>

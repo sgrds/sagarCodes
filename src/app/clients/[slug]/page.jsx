@@ -12,7 +12,7 @@ const Clients = async ({ params: { slug } }) => {
   return (
     <main className="px-4 mx-auto max-w-screen-xl pt-8 pb-16 lg:pt-16 lg:pb-24 ">
       <article>
-        <BlogHeader frontmatter={frontmatter} />
+        <BlogHeader link="/clients" frontmatter={frontmatter} />
         <Spacer size="xs" />
         <div className="prose md:prose-lg dark:prose-invert mx-auto w-full max-w-3xl">
           <Component />
@@ -45,7 +45,7 @@ export default Clients;
 
 export async function generateStaticParams() {
   const clients = getAllFileName("clientList");
-  console.log(clients);
+  // console.log(clients);
 
   return clients;
 }
