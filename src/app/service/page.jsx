@@ -85,7 +85,7 @@ const Services = () => {
             I have <span className="text-success">{`{worked}`}</span> with...
           </h2>
           <Link
-            href="#"
+            href="/clients"
             className="bg-info px-4 py-2 lg:px-8 lg:py-3 mx-8 rounded-full text-xl lg:text-3xl text-gray-900 font-medium"
           >
             ClientList
@@ -349,8 +349,8 @@ const Services = () => {
                 For Seamless and Scalable Websites 💪
               </h4>
               <h5 className="mt-4 text-2xl text-secondary">
-                Get noticed fast and keep clients happy with a lightning-fast🚀,
-                SEO-optimized website!
+                Get noticed fast and keep clients/users happy with a
+                lightning-fast🚀, SEO-optimized website!
               </h5>
               <p className="mt-8 text-lg text-base-content max-w-lg">
                 We excel at crafting custom website & WebApps that meet your
