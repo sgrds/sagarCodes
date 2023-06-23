@@ -65,22 +65,39 @@ const Footer = () => {
           </div>
           <div>
             <span className="footer-title">Services</span>
-            <a className="link link-hover">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
+            <Link href="/service#Content" className="link link-hover">
+              Content
+            </Link>
+            <Link href="/Design" className="link link-hover">
+              Design
+            </Link>
+            <Link href="/Developement" className="link link-hover">
+              Developement
+            </Link>
+            <Link href="/Clients" className="link link-hover">
+              Clients
+            </Link>
           </div>
           <div>
-            <span className="footer-title">Company</span>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
+            <span className="footer-title">SagarCodes</span>
+            <Link href="/about" className="link link-hover">
+              About us
+            </Link>
+            <Link href="/contact" className="link link-hover">
+              Contact
+            </Link>
+            <Link href="/clients" className="link link-hover">
+              Clients
+            </Link>
           </div>
           <div>
             <span className="footer-title">Legal</span>
-            <a className="link link-hover">Terms of use</a>
-            <a className="link link-hover">Privacy policy</a>
-            <a className="link link-hover">Cookie policy</a>
+            <Link href="#" className="link link-hover">
+              Terms of use
+            </Link>
+            <Link href="#" className="link link-hover">
+              Privacy policy
+            </Link>
           </div>
         </div>
         {/* <Spacer size="lg" /> */}
