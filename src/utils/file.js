@@ -60,8 +60,8 @@ export const getAllFileNameAndFrontmatter = async (
       };
     })
   );
-
+  const sortedPost = posts.sort(sortByDate);
   return {
-    posts: posts.sort(sortByDate),
+    posts: sortedPost,
   };
 };
