@@ -23,7 +23,7 @@ export const BookCall = () => {
                 target="_blank"
                 className="mt-4 btn btn-outline btn-success btn-lg rounded-full"
               >
-                {` Let's vibe on a call!`}
+                Book a Call
               </Link>
             </div>
             <div className="col-span-2 aspect-h-4 aspect-w-3 bg-red-200 rounded-lg overflow-hidden card">
@@ -49,9 +49,7 @@ const Contact = () => {
         <div className="hero my-32">
           <div className="hero-content text-center">
             <div className="max-w-4xl">
-              <h1 className="text-5xl font-bold">
-                {`Get in touch with us and let's start a conversation! 💌`}
-              </h1>
+              <h1 className="text-5xl font-bold">{`Get in touch 💌`}</h1>
               <p className="py-4 text-xl mt-4">
                 {`Whether you have a question, suggestion, or just want to say Hi, we're always here
                 to chat. You can get in touch with us through the following
