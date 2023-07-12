@@ -89,6 +89,15 @@ const Footer = () => {
             <Link href="/clients" className="link link-hover">
               Clients
             </Link>
+            <Link href="/blog" className="link link-hover">
+              Blogs
+            </Link>
+            <Link href="/service" className="link link-hover">
+              Service
+            </Link>
+            <Link href="#" className="link link-hover">
+              YouTube
+            </Link>
           </div>
           <div>
             <span className="footer-title">Legal</span>
