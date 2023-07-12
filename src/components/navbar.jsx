@@ -71,7 +71,7 @@ const MobileNavbar = () => {
         </div>
 
         {open && (
-          <div className={`h-[85vh] mt-8 overflow-scroll`}>
+          <div className={`h-[85vh] mt-8 overflow-y-scroll`}>
             <ul className="grid border-y border-gray-800 font-medium">
               {mobileLink.map((link) => (
                 <Link
