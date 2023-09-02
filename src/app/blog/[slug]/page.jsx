@@ -7,6 +7,17 @@ import BlogSection from "@/components/sections/blogSection";
 import { getFileData, getAllFileName } from "@/utils/file";
 export const dynamicParams = false;
 
+export async function generateMetadata(
+  { params: { slug }, searchParams },
+  parent
+) {
+  const { code, frontmatter } = await getFileData("posts", slug, "mdx");
+
+  return {
+    title: frontmatter.title + " - SagarCodes",
+  };
+}
+
 export default async function Blogs({ params: { slug } }) {
   const { code, frontmatter } = await getFileData("posts", slug, "mdx");
   const Component = getMDXComponent(code);
