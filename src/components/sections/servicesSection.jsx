@@ -13,7 +13,7 @@ const ServicesSection = () => {
             help.
           </h1>
           <h2 className="text-3xl">
-            {` Be it Content creation, video editing, copywriting, or "web App"
+            {` Be it Content creation, copywriting, or "web App"
             development services for social media, websites, and online
             platforms. Look no further! We've got you covered.`}
           </h2>
