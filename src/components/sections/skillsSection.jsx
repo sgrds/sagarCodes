@@ -91,13 +91,13 @@ const SkillsSection = () => {
     <div className="bg-[url('/background2.svg')] bg-cover relative min-h-screen grid content-center gap-10 md:gap-16 text-white text-7xl">
       <ScrollComponent />
       <ScrollComponent />
-      <div className="hidden lg:block opacity-95 absolute top-0 bottom-0 right-0 left-0 mx-auto mr-auto my-auto z-10 w-[960px] h-[960px] bg-gradient-radial from-primary-content via-base-100 blur-lg rounded-full" />
+      <div className="hidden lg:block opacity-95 absolute top-0 bottom-0 right-0 left-0 mx-auto mr-auto my-auto z-10 w-[990px] h-[990px] bg-gradient-radial from-primary-content via-base-100 blur-lg rounded-full" />
       <Image
-        width={600}
-        height={600}
-        src="/anime1.png"
+        width={500}
+        height={500}
+        src="/heroImageService.png"
         loading="lazy"
-        className="w-auto h-auto absolute top-0 bottom-0 right-0 left-0 mx-auto mr-auto my-auto rounded-full z-20 hidden lg:block"
+        className="w-auto h-auto absolute top-0 bottom-0 right-0 left-0 mx-auto mr-auto my-auto z-20 hidden lg:block"
         alt="AnimeImg of Drawing: Saikyou Mangaka Wa Oekaki Skill De Isekai Musou Suru!"
       />
     </div>
