@@ -14,7 +14,7 @@ const FeaturedBlogs = () => {
         </Link>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mx-6 sm:mx-0 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {featuredBlogs.slice(0, 3).map((data, index) => (
           <BlogCard key={index} post={data} />
         ))}
