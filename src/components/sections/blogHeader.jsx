@@ -17,7 +17,9 @@ const BlogHeader = ({ frontmatter, link = "/blog" }) => {
       <div className="mx-auto w-full max-w-3xl">
         <Link href={link} className="group flex text-lg">
           <MdOutlineKeyboardBackspace className="text-3xl mr-2 group-hover:-translate-x-2 group-hover:ease-in group-hover:duration-300" />
-          <span className="pt">Back to Blogs</span>
+          <span className="pt">
+            Back to {link === "/blog" ? "Blogs" : "Previous Page"}
+          </span>
         </Link>
         <Spacer size="2xs" />
         <h1 className="text-5xl font-medium">{title}</h1>
