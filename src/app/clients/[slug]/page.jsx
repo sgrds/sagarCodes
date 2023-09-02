@@ -5,6 +5,17 @@ import { getMDXComponent } from "mdx-bundler/client";
 export const dynamicParams = false;
 export const dynamic = "force-static";
 
+export async function generateMetadata(
+  { params: { slug }, searchParams },
+  parent
+) {
+  const { code, frontmatter } = await getFileData("clientList", slug, "mdx");
+
+  return {
+    title: frontmatter.title + " - SagarCodes",
+  };
+}
+
 const Clients = async ({ params: { slug } }) => {
   const { code, frontmatter } = await getFileData("clientList", slug, "mdx");
   const Component = getMDXComponent(code);
@@ -18,22 +29,7 @@ const Clients = async ({ params: { slug } }) => {
           <Component />
         </div>
         <Spacer size="xs" />
-        <div className="mx-auto max-w-3xl border-b-2 pb-4 border-neutral justify-end flex gap-4">
-          <a
-            target="_blank"
-            href={`https://twitter.com/intent/tweet?url=https://sagarcodes.com/blog/${slug}`}
-            className="text-error hover:underline font-medium"
-          >
-            Tweet this article
-          </a>
-          <a
-            target="_blank"
-            href={`https://github.com/sgrds/sagarCodes/blob/main/clientList/${slug}.mdx`}
-            className="text-error hover:underline font-medium"
-          >
-            Edit on Github
-          </a>
-        </div>
+        <div className="mx-auto max-w-3xl border-b-2 pb-4 border-neutral justify-end flex gap-4"></div>
 
         <Spacer size="sm" />
       </article>
