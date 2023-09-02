@@ -85,9 +85,14 @@ const MobileNavbar = () => {
               ))}
             </ul>
             <div className="w-full justify-center grid">
-              <button className="block my-16 btn btn-active btn-primary btn-base px-10 rounded-full">
-                Book a Call
-              </button>
+              <Link
+                target="_blank"
+                href="https://calendly.com/sagarcodes/30min"
+              >
+                <button className="block my-16 btn btn-active btn-primary btn-base px-10 rounded-full">
+                  Book a Call
+                </button>
+              </Link>
             </div>
           </div>
         )}
