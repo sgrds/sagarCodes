@@ -7,6 +7,13 @@ import SkillsSection from "@/components/sections/skillsSection";
 import FeaturedBlogs from "@/components/sections/featuredBlogs";
 import DiscordSection from "@/components/sections/discordSection";
 
+export const metadata = {
+  title:
+    "SagarCodes - Sagar Das a Full-Stack Developer, Designer and Content Creator",
+  description:
+    "We're a small team that works hard to create successful digital projects, develop creative digital products, and help your business grow.",
+};
+
 const page = () => {
   return (
     <main>
