@@ -34,19 +34,19 @@ const Footer = () => {
                 <BsGithub />
               </a>
               <a
-                href="https://www.youtube.com/channel/UCbhAKZUKZliQrzx7chh2ZOg"
+                href="https://www.youtube.com/channel/UC6fVngPhZP6PD6uIwgSMvBQ"
                 target="_blank"
                 className="text-3xl text-white hover:text-base-content"
               >
                 <BsYoutube />
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com/sagardasdev"
                 target="_blank"
                 className="text-3xl text-white hover:text-base-content"
               >
                 <BsTwitter />
-              </a>
+              </a> */}
               <a
                 href="https://www.instagram.com/sagar_codes/"
                 target="_blank"
@@ -71,8 +71,8 @@ const Footer = () => {
             <Link href="/service#Design" className="link link-hover">
               Design
             </Link>
-            <Link href="/service#Developement" className="link link-hover">
-              Developement
+            <Link href="/service#Development" className="link link-hover">
+              Development
             </Link>
             <Link href="/clients" className="link link-hover">
               Clients
@@ -95,18 +95,22 @@ const Footer = () => {
             <Link href="/service" className="link link-hover">
               Service
             </Link>
-            <Link href="#" className="link link-hover">
+            <Link
+              target="_blank"
+              href="https://www.youtube.com/channel/UC6fVngPhZP6PD6uIwgSMvBQ"
+              className="link link-hover"
+            >
               YouTube
             </Link>
           </div>
           <div>
             <span className="footer-title">Legal</span>
-            <Link href="#" className="link link-hover">
-              Terms of use
+            <Link href="/terms" className="link link-hover">
+              Terms
             </Link>
-            <Link href="#" className="link link-hover">
+            {/* <Link href="#" className="link link-hover">
               Privacy policy
-            </Link>
+            </Link> */}
           </div>
         </div>
         {/* <Spacer size="lg" /> */}
