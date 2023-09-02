@@ -27,6 +27,77 @@ import Image from "next/image";
 import IntroHeader from "@/components/introHeader";
 import { BookCall } from "@/app/contact/page";
 
+export const metadata = {
+  title: "Services - SagarCodes",
+  description:
+    "We're a small team that works hard to create successful digital projects, develop creative digital products, and help your business grow.",
+};
+
+export const ClientMarquee = () => {
+  return (
+    <section className="tracking-tight text-center text-3xl md:text-4xl lg:text-5xl font-medium max-w-screen-xl mx-auto">
+      {/* clients */}
+      <div className="lg:flex lg:flex-wrap justify-center">
+        <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-700">
+          I have <span className="text-success">{`{worked}`}</span> with...
+        </h2>
+        <Link
+          href="/clients"
+          className="bg-info px-4 py-2 lg:px-8 lg:py-3 mx-8 rounded-full text-xl lg:text-3xl text-gray-900 font-medium"
+        >
+          ClientList
+        </Link>
+      </div>
+      <Spacer size="2xs" />
+
+      <Marquee
+        gradient={true}
+        speed="40"
+        gradientColor={[13, 23, 40]}
+        gradientWidth={20}
+      >
+        <div className="flex gap-16 items-center">
+          <h4 className="tracking-tighter text-7xl font-black text-base-100 bg-white px-2">
+            SKE
+          </h4>
+
+          <div className="flex items-center">
+            <Image
+              width={80}
+              height={80}
+              src="/medwayMedicare.png"
+              className="w-20 h-20 mr-4"
+              alt="MedwayMedicare Logo"
+            />
+            <h2 className="text-4xl font-bold text-[#277BC0]">
+              Medway<span className="text-[#ffd05a]">Medicare</span>
+            </h2>
+          </div>
+          <div className="flex items-center">
+            <Image
+              width={100}
+              height={100}
+              src="/mcc.png"
+              className="w-24 h-24 mr-4"
+              alt="MCC Logo"
+            />
+            <h2 className="text-3xl font-bold">Modern Creative Center</h2>
+          </div>
+          <h4 className="tracking-tighter font-black text-6xl">Atomz.</h4>
+          <Image
+            width={250}
+            height={100}
+            src="/skynox.svg"
+            className="h-24 m-6"
+            alt="Skynox Logo"
+          />
+          <h4 className="tracking-tighter font-bold mr-16">MartLance</h4>
+        </div>
+      </Marquee>
+    </section>
+  );
+};
+
 const Services = () => {
   const gradient = {
     primary: { from: "from-primary", to: "to-success" },
@@ -64,79 +135,20 @@ const Services = () => {
             &
           </div>
           <h1 className="font-extrabold text-5xl md:text-7xl lg:text-8xl text-secondary-focus">
-            Developement
+            Development
           </h1>
 
-          <div className="max-w-7xl mx-auto mt-20">
-            <button className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-              <div className="relative px-7 py-4 bg-base-100 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 ring-1 ring-gray-900/5 leading-none flex items-top justify-start space-x-6 text-xl">
-                Get in Touch
-              </div>
-            </button>
+          <div className="mx-auto mt-20 grid justify-center">
+            <Link target="_blank" href="https://calendly.com/sagarcodes/30min">
+              <button className="block mt-11 btn btn-active btn-primary btn-lg rounded-full">
+                Book a Call
+              </button>
+            </Link>
           </div>
         </div>
       </section>
       <Spacer size="sm" />
-      <section className="tracking-tight text-center text-3xl md:text-4xl lg:text-5xl font-medium max-w-screen-xl mx-auto">
-        {/* clients */}
-        <div className="lg:flex lg:flex-wrap justify-center">
-          <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-gray-700">
-            I have <span className="text-success">{`{worked}`}</span> with...
-          </h2>
-          <Link
-            href="/clients"
-            className="bg-info px-4 py-2 lg:px-8 lg:py-3 mx-8 rounded-full text-xl lg:text-3xl text-gray-900 font-medium"
-          >
-            ClientList
-          </Link>
-        </div>
-        <Spacer size="2xs" />
-
-        <Marquee
-          gradient={true}
-          speed="40"
-          gradientColor={[13, 23, 40]}
-          gradientWidth={20}
-        >
-          <div className="flex gap-16 items-center">
-            <h4 className="tracking-tighter text-7xl font-black text-base-100 bg-white px-2">
-              SKE
-            </h4>
-
-            <div className="flex items-center">
-              <Image
-                width={80}
-                height={80}
-                src="/medwayMedicare.png"
-                className="w-20 h-20 mr-4"
-                alt="MedwayMedicare Logo"
-              />
-              <h2 className="text-4xl font-bold text-[#277BC0]">
-                Medway<span className="text-[#ffd05a]">Medicare</span>
-              </h2>
-            </div>
-            <div className="flex items-center">
-              <Image
-                width={100}
-                height={100}
-                src="/mcc.png"
-                className="w-24 h-24 mr-4"
-                alt="MCC Logo"
-              />
-              <h2 className="text-3xl font-bold">Modern Creative Center</h2>
-            </div>
-            <Image
-              width={250}
-              height={100}
-              src="/skynox.svg"
-              className="h-24 m-6"
-              alt="Skynox Logo"
-            />
-            <h4 className="tracking-tighter font-bold mr-16">MartLance</h4>
-          </div>
-        </Marquee>
-      </section>
+      <ClientMarquee />
       <Spacer size="lg" />
       <section id="Content" className="grid max-w-screen-xl mx-auto px-2">
         <IntroHeader
@@ -317,12 +329,12 @@ const Services = () => {
         </div>
       </section>
       <Spacer size="lg" />
-      <section id="Developement" className="grid max-w-screen-xl mx-auto px-2">
+      <section id="Development" className="grid max-w-screen-xl mx-auto px-2">
         <IntroHeader
           meta={{
             number: 3,
             intro: "Developing bespoke web Apps for our valued clients",
-            heading: "Developement",
+            heading: "Development",
             title: " We create custom Website, WebApps",
             gradient: gradient.tertiary,
           }}
