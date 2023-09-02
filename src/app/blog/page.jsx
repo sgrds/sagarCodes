@@ -3,6 +3,12 @@ import { Spacer } from "@/components/spacer";
 import FeaturedBlogSection from "@/components/sections/featuredBlogSection";
 import { getAllFileNameAndFrontmatter } from "@/utils/file";
 
+export const metadata = {
+  title: "Blogs - SagarCodes",
+  description:
+    "Unlock the Secrets to Successful Marketing, Developing Product, etc. We're a small team that works hard to create successful digital projects, develop creative digital products, and help your business grow.",
+};
+
 const page = async () => {
   const { posts } = await getAllFileNameAndFrontmatter("posts", "mdx");
 
@@ -33,13 +39,17 @@ const page = async () => {
       {/* blog list */}
 
       <div className="mx-4">
-        <div className="mx-auto max-w-screen-xl grid gap-6 md:grid-cols-2 lg:grid-cols-3 grid-flow-row-dense">
+        <div className="mx-6 sm:mx-auto max-w-screen-xl grid gap-6 md:grid-cols-2 lg:grid-cols-3 grid-flow-row-dense">
           {posts.map((data, index) => (
             <BlogCard key={index} post={data} />
           ))}
         </div>
         {/* Spacer component */}
-        <Spacer size="lg" />
+        <Spacer size="sm" />
+        <div className="text-center font-medium text-gray-500">
+          {`You've reached the End of the List 😓`}
+        </div>
+        <Spacer size="2xs" />
       </div>
     </div>
   );
