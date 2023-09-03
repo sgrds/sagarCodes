@@ -24,10 +24,12 @@ const HeroSection = () => {
               Book a Call
             </button>
           </Link>
+          <Link href="/service">
+            <button className="mt-4 btn btn-outline btn-warning btn-lg rounded-full">
+              Check our Services
+            </button>
+          </Link>
 
-          <button className="mt-4 btn btn-outline btn-warning btn-lg rounded-full">
-            Check our Services
-          </button>
           <div className="flex mt-24 text-3xl">
             <Link href="#Intro">
               <BsArrowDownCircle className="text-5xl animate-bounce mr-3  inline-block" />
