@@ -8,6 +8,7 @@ export const metadata = {
   title: "Clients - SagarCodes",
   description:
     "We've had the opportunity to help numerous clients. We're a small team that works hard to create successful digital projects, develop creative digital products, and help your business grow.",
+  robots: "index, follow",
 };
 const page = async () => {
   const { posts } = await getAllFileNameAndFrontmatter("clientList", "mdx");

@@ -13,6 +13,7 @@ export async function generateMetadata(
 
   return {
     title: frontmatter.title + " - SagarCodes",
+    robots: "index, follow",
   };
 }
 

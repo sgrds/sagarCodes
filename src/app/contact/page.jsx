@@ -8,6 +8,7 @@ export const metadata = {
   title: "Contact us - SagarCodes",
   description:
     "Get in touch, We're a small team that works hard to create successful digital projects, develop creative digital products, and help your business grow. Whether you have a question, suggestion, or just want to say Hi, we're always here to chat.",
+  robots: "index, follow",
 };
 export const BookCall = () => {
   return (

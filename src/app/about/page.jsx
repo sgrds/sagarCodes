@@ -9,6 +9,7 @@ export const metadata = {
   title: "About - SagarCodes",
   description:
     "We're a small team that works hard to create successful digital projects, develop creative digital products, and help your business grow.",
+  robots: "index, follow",
 };
 
 const page = () => {

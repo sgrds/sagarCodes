@@ -7,6 +7,7 @@ export const metadata = {
   title: "Blogs - SagarCodes",
   description:
     "Unlock the Secrets to Successful Marketing, Developing Product, etc. We're a small team that works hard to create successful digital projects, develop creative digital products, and help your business grow.",
+  robots: "index, follow",
 };
 
 const page = async () => {
